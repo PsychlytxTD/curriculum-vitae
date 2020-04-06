@@ -1,0 +1,153 @@
+---
+name: Timothy J Deitz
+position: 'Senior Clinical Psychologist'
+address: "5 Keast Street, Frankston South 3199"
+phone: +61 449 963 259
+www: timothydeitz.com
+linkedin: Timothy Deitz
+email: timothydeitz@gmail.com
+twitter: Psychlytx
+github: PsychlytxTD
+aboutme: Advanced Psychological Assessment, Psychotherapeutic Intervention, Risk Management, CBT, ACT, ISTDP, Psychometric Outcome Measurement, Statistics
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(lubridate)
+library(here)
+library(readxl)
+library(glue)
+```
+
+```{r experience, inclue=FALSE}
+jobs.raw <- read_csv(here::here("data", "jobs.csv"))
+jobs <-
+  jobs.raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+```{r, include=FALSE}
+
+skills<- read_csv(here("data", "skills.csv"))
+
+```
+
+```{r, include = FALSE}
+skills_contd<- read_csv(here("data", "skills_contd.csv"))
+```
+
+```{r}
+qualifications_df <- tribble(~what, ~when, ~with, ~where,
+              "Intensive Short-Term Dynamic Psychotherapy Core Training Accreditation (currently completing)",
+              2018,
+              "3 years, 288 hours, monthly supervision & therapy video presentations",
+              "International Experiential Dynamic Therapy Association (IEDTA) | ISTDP Australia"
+              )
+```
+
+# Education
+
+```{r education}
+jobs %>% 
+  filter(Tag == "education") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+# Clinical Experience
+
+```{r data_science_experience}
+jobs %>% 
+  filter(Tag == "clinical_practice") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+\newpage
+
+# Training
+
+```{r}
+qualifications_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+# Research
+
+```{r}
+research_df <- tribble(~what, ~when, ~with, ~where, ~why,
+              "Do you mind? Attention management for persistent pain.",
+              2015,
+              "Thesis - Master of Psychology (Clinical)",
+              "The University of Melbourne",
+              "Statistically evaluated a 6-week trial of a mindfulness-based intervention for persistent pain.",
+              "Do perceived stigma and positive perceptions of caregiving predict parental self-efficacy among parents of children with disabilities?",
+              2014,
+              "Thesis - Postgraduate Diploma in Psychology",
+              "The University of Melbourne",
+              "Crossectionally analysed a large data set developed by the Parenting Research Centre."
+              )
+```
+
+```{r}
+research_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where, why = why)
+```
+
+# Technologies/Languages
+
+```{r skills}
+
+skills  %>% filter(Tag == "skills") %>% 
+brief_entries(
+when = When,
+what = What
+) 
+
+```
+
+
+# Software Development
+
+```{r}
+software_df <- tribble(~what, ~when, ~with, ~where,
+              "Created Measurely, a suite of web applications for completing psychological outcome measures (hosted via Docker, AWS & Shiny Proxy).",
+              2019,
+              NA,
+              "https://psychlytx.com/measurely",
+              "Developed the Psychlytx R package, a private package containing Shiny modules and functions for generating the UX and backend of Measurely web applications.",
+              2019,
+              NA,
+              "https://github.com/TimothyDeitz/"
+              )
+```
+
+```{r}
+software_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where)
+```

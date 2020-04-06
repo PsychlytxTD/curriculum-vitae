@@ -1,0 +1,196 @@
+---
+name: Timothy J Deitz
+position: 'Senior Clinical Psychologist & Data Analyst'
+address: "1/1529 Malvern Rd, Glen Iris, 3146"
+phone: +61 449 963 259
+www: timothydeitz.com
+linkedin: Timothy Deitz
+email: timothydeitz@gmail.com
+twitter: Psychlytx
+github: PsychlytxTD
+aboutme: Health data curation, biostatistics, reports & reproducibility, data visualisation, statistical web applications, machine learning & predictive modelling
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(lubridate)
+library(here)
+library(readxl)
+library(glue)
+```
+
+
+
+```{r education}
+
+education_raw<- read_csv(here::here("data", "education.csv"))
+education <-
+  education_raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+
+```
+
+# Education
+
+```{r }
+education %>% 
+  filter(Tag == "education") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+```{r}
+qualifications_df <- tribble(~what, ~when, ~with, ~where,
+              "Course Completion: Data Scientist With R",
+              2019,
+              "94 hours, 22 modules",
+              "DataCamp (view graduation certificate at https://www.datacamp.com/statement-of-accomplishment/track/8fc786604873ba9a55c44a981d22708686e44d1f)"
+              )
+```
+
+# Additional Learning
+
+```{r}
+qualifications_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+# Research
+
+```{r}
+research_df <- tribble(~what, ~when, ~with, ~where, ~why,
+              "Do you mind? Attention management for persistent pain.",
+              2015,
+              "Thesis - Master of Psychology (Clinical)",
+              "The University of Melbourne",
+              "Statistically evaluated a 6-week trial of a mindfulness-based intervention for persistent pain.",
+              "Do perceived stigma and positive perceptions of caregiving predict parental self-efficacy among parents of children with disabilities?",
+              2014,
+              "Thesis - Postgraduate Diploma in Psychology",
+              "The University of Melbourne",
+              "Crossectionally analysed a large data set developed by the Parenting Research Centre."
+              )
+```
+
+```{r}
+research_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where, why = why)
+```
+
+```{r experience, inclue=FALSE}
+jobs.raw <- read_csv(here::here("data", "new_jobs.csv"))
+jobs <-
+  jobs.raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+# Data Science Experience
+
+```{r data_science_experience}
+jobs %>% 
+  filter(Tag == "data_science") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+# Data Science Frameworks & Languages
+
+```{r, include=FALSE}
+
+skills<- read_csv(here("data", "skills.csv"))
+
+```
+
+
+```{r skills}
+
+skills  %>% filter(Tag == "skills") %>% 
+brief_entries(
+when = When,
+what = What
+) 
+
+```
+
+# Software
+
+```{r}
+software_df <- tribble(~what, ~when, ~with, ~where,
+              "Created Measurely, a suite of web applications for completing psychological outcome measures (hosted via Docker, AWS & Shiny Proxy).",
+              2019,
+              NA,
+              "https://psychlytx.com/measurely",
+              "Developed the Psychlytx R package, a private package containing Shiny modules and functions for generating the UX and backend of Measurely web applications.",
+              2019,
+              NA,
+              "https://github.com/TimothyDeitz/"
+              )
+```
+
+```{r}
+software_df %>% 
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+
+```{r inclue=FALSE}
+clinical_jobs_raw <- read_csv(here::here("data", "clinical_jobs_only.csv"))
+clinical_jobs <-
+  clinical_jobs_raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+# Additional Clinical Experience
+
+```{r clinical_experience}
+clinical_jobs %>% 
+  filter(Tag == "clinical_practice") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+

@@ -1,0 +1,87 @@
+---
+name: Timothy J Deitz
+position: 'Research Assistant in Data Management and Analysis'
+address: "1/1529 Malvern Rd, Glen Iris, 3146"
+phone: +61 449 963 259
+www: timothydeitz.com
+linkedin: Timothy Deitz
+email: timothydeitz@gmail.com
+twitter: Psychlytx
+github: PsychlytxTD
+aboutme: Statement of Claims Against the Key Selection Criteria
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+
+6th April, 2020
+\newline
+
+# PhD, or substantial progress towards PhD or Master’s degree in biostatistics, health informatics, data science or closely related discipline
+
+\vspace{12pt}
+I successfully completed a Master of Psychology (Clinical) at the University of Melbourne in 2016.
+\newline
+
+# Demonstrated experience of quantitative data management processes, including data manipulation, data storage, security, retrieval, query and reporting, while maintaining transparency for key researchers.
+
+\vspace{12pt}
+In my current role as a Senior Clinical Psychologist with *Epworth Health*, I have extracted, cleaned and performed predictive modelling with health data from a range of sources, including the hospital's Electronic Medical Record (EMR) system. An example of a data cleaning workflow I conducted as part of this project can be found at *https://www.timothydeitz.com/post/explore_outcomes/*. Under the banner of a company I registered, *Psychlytx*, I have also developed a series of web applications for administering psychological outcome measures and generating clinical reports, using the *R Shiny* and *R Markdown* frameworks. This work has required advanced skills in R coding, SQL database design/querying and technical expertise in hosting data-science products (using technologies such as *AWS*, *Docker* and *Linux*). Code for the web applications is stored in a private Github repository and can be provided upon request.
+\newline
+
+# Good understanding of the principles of common statistical methods (e.g. regression analysis).
+
+\vspace{12pt}
+I received a First Class Honours grade for every data analysis and statistical learning subject completed as part of my undergraduate and postgraduate studies in Clinical Psychology at *University of Melbourne*. These subjects covered research design and a wide range of common statistical methods, including correlation, ANOVA, multiple linear regression, logistic regression, loglinear analysis, multi-level modelling, principal components analysis/factor analysis and structural equation modeling. Since this time I have acquired skills in additional forms of statistical analysis and machine learning. 
+\newline
+
+# Excellent problem-solving skills with the ability to take initiative undertake tasks with increased autonomy.
+
+\vspace{12pt}
+One of my key strengths lies in creative problem-solving, especially during the data wrangling/cleaning phase of a project. Several colleagues, including Elizabeth Stark (Managing Director and head of Data Science Products at Symbolix) and Hung Vo (Data Analyst and Senior Manager at Ambulance Victoria) can attest to my persistance and lateral thinking in the course of conducting data analysis.
+\newline
+
+# A high level of organisation skills, ability to prioritise and manage competing work demands with excellent attention to detail.
+
+\vspace{12pt}
+As a Senior Clinical Psychologist at Epworth Health, I have demonstrated an ability to successfully manage competing clinical and administrative demands. A high level of attention to detail during code development can be observed in several recent articles I composed on the topics of data cleaning and visualisation (for example, see *https://www.timothydeitz.com/post/explore_distributions/*).
+\newline
+
+# Demonstrated computer literacy and proficiency in the production of high-level work using software such as Microsoft Office applications and specified University software programs (such as STATA or R), with the capability and willingness to learn new packages as appropriate.
+
+\vspace{12pt}
+I have an advanced level of proficiency in R programming and have completed an online *Data Scientist with R* qualification (comprising 94 hours and 22 modules), viewable at *https://www.datacamp.com/statement-of-accomplishment/track/8fc786604873ba9a55c44a981d22708686e44d1f*. 
+\newline
+
+# Demonstrated ability to contribute to independent and team-based research in health research.
+
+\vspace{12pt}
+In addition to conducting research into persistent pain outcomes with Epworth Health, I have completed two Clinical Psychology theses, both of which received a First Class Honours grade. 
+\newline
+
+# Excellent interpersonal, written and verbal communication skills and ability to work effectively as part of a research team.
+
+\vspace{12pt}
+I have worked effectively as a member of a multidisciplinary rehabilitation team at Epworth Health. I have also worked well in team environments at *The Royal Children's Hospital*, *St Vincent's Hospital*, *Sacred Heart Mission* (homelessness service), and in private practice. Strong written and verbal communications skills are supported by a successfully completed degree in Media & Communications from University of Melbourne. 
+\newline
+
+# Strong evidence of ability and desire to build an academic career trajectory.
+
+\vspace{12pt}
+I am able to state a strong intention to build a career in academia, as evidenced by high grades (First Class Honours average) achieved throughout undergraduate and postgraduate coursework and research in Clinical Psychology.
+\newline
+
+# Working knowledge of ethical and research governance in health-related research.
+
+\vspace{12pt}
+In the course of completing a Master of Clinical Psychology thesis evaluating a 6-week intervention for persistent pain (conducted at the Royal Melbourne Hospital), I was required to complete an ethics application and gained a robust understanding of research governance as applicable to psychology. I am willing and eager to build upon this knowledge, which has been augmented through exposure to Epworth colleagues conducting various forms of health-related research.
+\newline
+
+Yours sincerely, 
+\newline
+
+Timothy Deitz
+
+

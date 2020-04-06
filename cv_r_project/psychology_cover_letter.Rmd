@@ -1,0 +1,58 @@
+---
+name: Timothy J Deitz
+position: 'Senior Clinical Psychologist, Grade 3'
+address: "5 Keast Street, Frankston South 3199"
+phone: +61 449 963 259
+www: timothydeitz.com
+linkedin: Timothy Deitz
+email: timothydeitz@gmail.com
+twitter: Psychlytx
+github: PsychlytxTD
+aboutme: Peninsula Health, 2 Hastings Road, Frankston VIC 3199
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+# Cover Letter
+
+`r format(Sys.Date(), "%A, %B %d, %Y")`
+\newline
+
+
+Dear Ms Burroughs, 
+\newline
+
+I wish to apply for the role of Senior Clinical Psychologist with the Access and Assessment Team (AAT) at Peninsula Health. My application reflects a longstanding dedication to providing high quality mental health assessment and treatment to vulnerable members of the community. My interest in this role is also informed by a warm personal affiliation with the Mornington Peninsula and my strong ties to doctors and allied health professionals in the local area.
+\newline
+
+I understand that a Senior Clinical Psychologist with the AAT is expected to provide initial assessment and brief, targeted interventions to individuals experiencing a crisis or acute mental illness episode. This clinician will have a significant responsibility for alleviating or managing immediate distress, working effectively and sensitively with third parties, and helping the patient establish resources to mitigate or prevent future episode reoccurences. I believe that my previous experiences with Epworth Health and in the public mental health system have provided me with a capacity to perform this role at a high level.
+\newline
+
+I am currently a Senior Clinical Psychologist with Epworth Health in Camberwell, while also operating my own private psychology practice (*Effective Psychology*) on the Mornington Peninsula. Throughout my role with Epworth I have developed a diverse set of clinical and non-clinical abilities that include advanced psychological assessment, suicide/self-harm risk management, and psychotherapeutic intervention employing a range of evidence-based modalities (CBT, ACT, Motivational Interviewing and ISTDP). I have a considerable strength in developing and communicating case formulations, and have routinely been called upon by Epworth colleagues to enrich their understanding of patient behaviours and emotional difficulties. I am also skilled in psychometric assessment, and can demonstrate a sophisticated knowledge of mental health data analysis and storage, best practices in symptom assessment, and statistics/data science. In collaboration with a Dutch company, *Functional Analytics*, I have spent the previous 18 months developing a commercial, web-based platform for administering psychological outcome measures, which should become available during the next 3 months.
+\newline
+
+Previous clinical experiences in acute mental health have prepared me well for the role of a Senior Clinical Psychologist with the AAT. Throughout 2016, I practiced as a psychologist with St Vincent's Acute Psychiatric Inpatient Service (AIS) in Fitzroy, where I completed clinical evaluations, psychometric assessments, crisis interventions and short-term psychotherapy. These activities were undertaken with individuals suffering severe depression, self-harming behaviours, prodromal symptoms and mania. I also developed recommendations and written assessment reports for psychiatrists and multidisciplinary team members. During and since my time at the AIS, I have devoted considerable energy to studying the Mental Health Act 2014, The National Standards for Mental Health Services 2010, and additional legislation pertinent to operating in the public mental health system. 
+\newline
+
+Throughout 2017, I held a role as a Mental Health Case Manager with Sacred Heart Mission and Prahran Mission in South Yarra and St Kilda. This highly challenging position required that I provide practical and therapeutic support to individuals who were homeless and often experiencing severe mental illness. A large component of the work involved liaising with third parties (e.g. housing and legal services) and advocating for my clients when they were unable to self-advocate. This experience further strengthened my skills in crisis intervention, decision-making under pressure, risk assessment and emotional resilience. 
+\newline
+
+I enjoy the process of supervising and mentoring junior psychologists, and would relish the opportunity to do so within the scope of this role. I have a natural affinity and capacity for teaching others, and have spent considerable time assisting mental health clinicians to develop their case formulation skills. Although I am not a registered clinical supervisor, I am eligible and willing to complete this training as required.
+\newline
+
+
+In summary, I believe that my past experiences have provided me with a solid foundation of abilities with which to perform the role of Clinical Psychologist with the AAT at a high level. I am available for an interview at your convenience and would be delighted to discuss this further.
+\newline
+
+
+Yours sincerely,
+\newline
+
+Timothy Deitz
+
+
+
+
+

@@ -1,0 +1,53 @@
+---
+name: Timothy J Deitz
+position: 'Senior Clinical Psychologist & Data Analyst'
+address: "1/1529 Malvern Rd, Glen Iris, 3146"
+phone: +61 449 963 259
+www: timothydeitz.com
+linkedin: Timothy Deitz
+email: timothydeitz@gmail.com
+twitter: Psychlytx
+github: PsychlytxTD
+aboutme: Dr Christine Hallinan, Future Health Today, Department of General Practice, Faculty of Medicine, Dentistry & Health Sciences, University of Melbourne
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+# Cover Letter
+
+6th April, 2020
+\newline
+
+Dear Dr Hallinan, 
+\newline
+
+I wish to apply for the role of *Research Assistant in Data Management and Analysis* with *Future Health Today (FHT)*. I believe I could add significant value to this project, given my unique skillset that includes both clinical expertise in chronic disease management and strong statistical programming abilities using the *R* framework.
+\newline
+
+As a Senior Clinical Psychologist with *Epworth Health*, I have extracted, cleaned and analysed health outcome data from a range of sources, including the hospital's Electronic Medical Record (EMR) system. My focus has specifically centred on developing models to identify patients who are likely to show clinically significant improvements in pain, activity levels, depression, anxiety and stress through participation in a multidisciplinary rehabilitation program. An important aspect of my work has been employing *R Markdown* to generate insightful reports that are reproducible. I have also used  *R Shiny* (an R-based web development paradigm) to create statistical web applications for non-technical audiences, enabling them to explore clinical outcomes using a point-and-click interface. 
+\newline
+
+I understand that the present role requires skills in importing and manipulating large volumes of EMR data, performing a range of statistical analyses (especially linear regression, logistic regression and classification methods), establishing reliable and transparent coding workflows and publications for lead researchers, liasing with diverse health industry partners, and participating in teaching and professional development activities. The goal of Future Health Today—i.e. the early detection and treatment of cardiovascular disease, type 2 diabetes, and chronic kidney disease—is impressive. I am enthusiastic about the prospect of participating in a close collaboration between university/industry researchers and front-line General Practitioners. To me, this model of applied research is both important and inspiring.
+\newline
+
+I believe that my clinical expertise in rehabilitation, coupled with a well-developed knowledge of statistial programming, would render me invaluable as a data analysis research assistant with Future Health Today. I am passionate about improving the efficiency and quality of my coding practices, and frequently adopt new methodologies developed within the R community. For example, I recently investigated methods for running statistical models inside databases, thereby circumventing the need to import large amounts of data to disk. I have also explored *R Studio Connect*, which provides a stable platform for rapidly sharing R Markdown reports, scripts and web applications amongst colleagues, and for automating repetitive tasks. One of my strengths is being able to creatively problem-solve during the data-manipulation stage of a project. I also have a solid grasp of biostatistical concepts, and am capable of conducting inferential and machine learning analyses (especially predictive modelling), whilst ensuring that requisite statistical assumptions are met. I spend a large proportion of my spare time writing articles on data analysis topics, liaising with data scientists and improving my programming abilities (currently my focus is on *AWS*, *Docker* and *Linux*). 
+\newline
+
+My dedication to data science has led me to develop a web-based platform for administering psychological outcome measures and generating clinical reports, which I will launch in collaboration with a Dutch company (*Functional Analytics*) later this year. In pursuing this project, I developed modular R Shiny code to build a set of web applications, accessible via a secure server. I also established data transfer functionality between web applications, a PostgreSQL database (which I designed), and various APIs (e.g. for user authentication and automated email generation). In addition, I created an interactive dashboard that will allow clinicians to analyse the clinical performance of their clinic in real time. Throughout this endeavour I maintained robust version control procedures using Git and Github, and am striving to automate key elements of project deployment.
+\newline
+
+With a prior degree in Media & Communications from *University of Melbourne*, I appreciate the mindset required to interact effectively with diverse stakeholders in the health services industry. Moreover as a practicing Clinical Psychologist, I have a talent for expressing important messages clearly and sincerely, thereby cultivating strong and positive relationships with both colleagues and external parties. With a strong base of knowledge in research governance, I am able to present ideas in an ethical manner, whilst also attracting enthusiasm, support and funding interest from potential business partners. 
+\newline
+
+In summary, I believe that my previous experiences would enable me to perform the role of Research Assistant in Data Management and Analysis at a high level. I am available for an interview at your convenience and would be delighted to discuss this further. 
+\newline
+
+Yours sincerely, 
+\newline
+
+Timothy Deitz
+
+
+
